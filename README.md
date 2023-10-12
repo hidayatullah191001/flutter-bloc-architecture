@@ -31,6 +31,7 @@ GITHUB_REPO_URL="https://github.com/$GITHUB_USERNAME/$REPO_NAME.git"
 git clone --single-branch --branch $BRANCH $GITHUB_REPO_URL $NEW_PROJECT_NAME
 cd $NEW_PROJECT_NAME
 find . -type f -exec sed -i "s/bloc_architecture_template/$NEW_PROJECT_NAME/g" {} \;
+rm -r android/app/src/main/kotlin/com/example/bloc_architecture_template
 flutter create .
 
 echo "Proyek Flutter dari template telah berhasil dibuat dengan nama: $NEW_PROJECT_NAME" 
