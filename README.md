@@ -38,7 +38,7 @@ echo "Proyek Flutter dari template telah berhasil dibuat dengan nama: $NEW_PROJE
 
 3. Save pada folder projek flutter anda dengan nama `nama_file.sh`
 4. Buka Git Bash pada folder penyimpanan kode diatas
-5. Jalankan perintah `chmod +x get_flutter_template.sh`
+5. Jalankan perintah `chmod +x nama_file.sh`
 6. Lalu jalankan file `nama_file.sh` atau dengan mengetikkan `./nama_file.sh` di git bash
 7. Masukkan nama projek anda, lalu enter dan tunggu hingga proses selesai
 8. Proyek berhasil dibuat
