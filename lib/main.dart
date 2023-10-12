@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'SafeSavings',
+      title: 'bloc_architecture_template',
       home: Scaffold(),
     );
   }
