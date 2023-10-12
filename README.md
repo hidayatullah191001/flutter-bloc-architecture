@@ -14,7 +14,7 @@ Dengan menggunakan metode clone, maka kamu akan mengambil data mentah dari branc
 ### Bash
 Dengan menggunakan script bash, kamu hanya menjalankan program shell dan proyek akan langsung tercloning sekaligus merubah nama projek lama sesuai dengan inputan projek baru yang ingin kamu buat. Berikut adalah langkah-langkahnya. 
 1. Buka Notepad
-2. Pastekan kode bash berikut
+2. Pastekan kode bash berikut (Script tidak boleh diubah)
 ```
 #!/bin/bash
 GITHUB_USERNAME="hidayatullah191001"
