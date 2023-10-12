@@ -1,16 +1,44 @@
-# bloc_architecture_template
+# Template Proyek Flutter BLOC
 
-A new Flutter project.
+## Cara Penggunaan
+### Clone Repository
+Dengan menggunakan metode clone, maka kamu akan mengambil data mentah dari branch `master` pada repository. Hal ini berarti kamu perlu mengubah beberapa settingan nama proyek pada beberapa file yang terdapat di dalam template proyek Flutter BLOC. Berikut adalah langkah-langkahnya.
+1. Buka Git Bash
+2. Lalu masukkan perintah `git clone https://github.com/hidayatullah191001/flutter-bloc-architecture.git`
+3. Tunggu hingga selesai
+4. Ubah nama folder sesuai dengan nama projek kamu
+5. Ubah nama projek lama di pubspec, AndroidManifest dengan nama projek baru kamu
+6. Jalankan `flutter pub get`
+7. Selesai
 
-## Getting Started
+### Bash
+Dengan menggunakan script bash, kamu hanya menjalankan program shell dan proyek akan langsung tercloning sekaligus merubah nama projek lama sesuai dengan inputan projek baru yang ingin kamu buat. Berikut adalah langkah-langkahnya. 
+1. Buka Notepad
+2. Pastekan kode bash berikut
+```
+#!/bin/bash
+GITHUB_USERNAME="hidayatullah191001"
+REPO_NAME="flutter-bloc-architecture"
+BRANCH="master"
 
-This project is a starting point for a Flutter application.
+echo "Template Proyek Flutter BLOC Architecture"
+echo "Created By : Hidayatullah"
+echo "Github : https://github.com/hidayatullah191001"
+echo ""
 
-A few resources to get you started if this is your first Flutter project:
+read -p "Masukkan nama proyek baru: " NEW_PROJECT_NAME
+GITHUB_REPO_URL="https://github.com/$GITHUB_USERNAME/$REPO_NAME.git"
+git clone --single-branch --branch $BRANCH $GITHUB_REPO_URL $NEW_PROJECT_NAME
+cd $NEW_PROJECT_NAME
+find . -type f -exec sed -i "s/keuangan/$NEW_PROJECT_NAME/g" {} \;
+flutter create .
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+echo "Proyek Flutter dari template telah berhasil dibuat dengan nama: $NEW_PROJECT_NAME" 
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. Save pada folder projek flutter anda dengan nama `nama_file.sh`
+4. Buka Git Bash pada folder penyimpanan kode diatas
+5. Jalankan perintah `chmod +x get_flutter_template.sh`
+6. Lalu jalankan file `nama_file.sh` atau dengan mengetikkan `./nama_file.sh` di git bash
+7. Masukkan nama projek anda, lalu enter dan tunggu hingga proses selesai
+8. Proyek berhasil dibuat
